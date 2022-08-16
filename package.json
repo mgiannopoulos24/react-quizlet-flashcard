@@ -1,0 +1,12 @@
+{
+  "name": "react-quizlet-flashcard",
+  "version": "2.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "repository": "https://github.com/ABSanthosh/react-quizlet-flashcard.git",
+  "author": "ABSanthosh <a.b.santhosh02@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
