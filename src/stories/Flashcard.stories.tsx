@@ -12,7 +12,7 @@ stories.add("default", () => {
         style={{
           margin: "auto",
         }}
-        frontHTML="<h1>Front</h1>"
+        frontHTML="Front"
         backHTML="<h1>Back</h1>"
       />
     </div>
