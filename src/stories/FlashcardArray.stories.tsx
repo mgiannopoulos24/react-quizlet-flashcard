@@ -60,28 +60,28 @@ const deck = {
 stories.add("default", () => {
   return (
     <div className="storyContainer">
-      <div
+      {/* <div
         style={{
           height: "200px",
           width: "200px",
           padding: "10px",
           backgroundColor: "lightgrey",
         }}
-      >
-        <FlashcardArray
-          cards={deck.cards}
-          FlashcardArrayStyle={{
-            height: "100%",
-            width: "100%",
-          }}
-          backContentStyle={{
-            fontSize: "20px",
-          }}
-          frontContentStyle={{
-            fontSize: "20px",
-          }}
-        />
-      </div>
+      > */}
+      <FlashcardArray
+        cards={deck.cards}
+        // FlashcardArrayStyle={{
+        //   height: "100%",
+        //   width: "100%",
+        // }}
+        // backContentStyle={{
+        //   fontSize: "20px",
+        // }}
+        // frontContentStyle={{
+        //   fontSize: "20px",
+        // }}
+      />
+      {/* </div> */}
     </div>
   );
 });

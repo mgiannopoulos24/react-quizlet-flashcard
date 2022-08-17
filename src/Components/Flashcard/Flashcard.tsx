@@ -13,7 +13,7 @@ interface FlashcardProps {
   width?: string;
   resetState?: boolean;
   style?: React.CSSProperties;
-  onCardFlip?: () => void;
+  onCardFlip?: (state: boolean) => void;
 }
 
 export default function Flashcard({
@@ -28,7 +28,7 @@ export default function Flashcard({
   height,
   width,
   resetState = false,
-  onCardFlip = () => {},
+  onCardFlip = (state = false) => {},
 }: FlashcardProps) {
   const [isFlipped, setIsFlipped] = React.useState(false);
   React.useEffect(() => {

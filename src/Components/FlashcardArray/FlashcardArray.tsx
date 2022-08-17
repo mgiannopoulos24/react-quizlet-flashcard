@@ -23,7 +23,7 @@ interface FlashcardArrayProps {
   backCardStyle?: React.CSSProperties;
   backContentStyle?: React.CSSProperties;
   onCardChange?: (id: number, state: boolean) => void;
-  forwardRef?: React.Ref<HTMLDivElement>;
+  forwardRef?: any;
   FlashcardArrayStyle?: React.CSSProperties;
 }
 
@@ -36,7 +36,7 @@ export default function FlashcardArray({
   frontContentStyle = {},
   backCardStyle = {},
   backContentStyle = {},
-  forwardRef,
+  forwardRef = null,
   FlashcardArrayStyle = {},
 }: FlashcardArrayProps) {
   const [cardNumber, setCardNumber] = React.useState(0);
@@ -44,13 +44,17 @@ export default function FlashcardArray({
   const [isOverFlow, setIsOverFlow] = React.useState("");
 
   const placeFillerCard = (
-    <Flashcard className="FlashcardArrayWrapper__empty" width="100%" />
+    <Flashcard
+      className="FlashcardArrayWrapper__empty"
+      width="100%"
+      backHTML=""
+      frontHTML=""
+    />
   );
 
   const cardsList = cards.map((card, index) => (
     <Flashcard
       key={index}
-      id={card.id}
       frontHTML={card.frontHTML}
       backHTML={card.backHTML}
       frontCardStyle={{ ...card.frontCardStyle, ...frontCardStyle }}
