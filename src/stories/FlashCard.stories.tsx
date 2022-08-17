@@ -8,7 +8,13 @@ import FlashCard from "../Components/FlashCard/FlashCard";
 stories.add("default", () => {
   return (
     <div className="storyContainer">
-      <FlashCard height="340px" width="560px" />
+      <FlashCard
+        style={{
+          margin: "auto",
+        }}
+        frontHTML="<h1>Front</h1>"
+        backHTML="<h1>Back</h1>"
+      />
     </div>
   );
 });
