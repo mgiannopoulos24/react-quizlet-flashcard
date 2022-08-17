@@ -1,1 +1,1 @@
-export { default as FlashCard } from "./Components/FlashCard/FlashCard";
+export { default as FlashCard } from "./Components/Flashcard/Flashcard";

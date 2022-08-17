@@ -3,12 +3,12 @@ import { storiesOf } from "@storybook/react";
 const stories = storiesOf("Flashcard", module);
 import "./storyStyle.scss";
 
-import FlashCard from "../Components/FlashCard/FlashCard";
+import Flashcard from "../Components/Flashcard/Flashcard";
 
 stories.add("default", () => {
   return (
     <div className="storyContainer">
-      <FlashCard
+      <Flashcard
         style={{
           margin: "auto",
         }}

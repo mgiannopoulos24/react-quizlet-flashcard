@@ -1,5 +1,5 @@
 import React from "react";
-import "./FlashCard.scss";
+import "./Flashcard.scss";
 
 interface FlashcardProps {
   frontHTML: string;
@@ -28,7 +28,7 @@ export default function Flashcard({
   height,
   width,
   resetState = false,
-  onCardFlip,
+  onCardFlip = () => {},
 }: FlashcardProps) {
   const [isFlipped, setIsFlipped] = React.useState(false);
   React.useEffect(() => {
