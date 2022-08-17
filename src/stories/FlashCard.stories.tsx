@@ -1,10 +1,9 @@
 import React from "react";
-
 import { storiesOf } from "@storybook/react";
+const stories = storiesOf("Flashcard", module);
+import "./storyStyle.scss";
 
 import FlashCard from "../Components/FlashCard/FlashCard";
-
-const stories = storiesOf("Flashcard", module);
 
 stories.add("default", () => {
   return (
