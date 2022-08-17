@@ -69,7 +69,7 @@ stories.add("default", () => {
         }}
       > */}
       <FlashcardArray
-        cards={deck.cards}
+
         // FlashcardArrayStyle={{
         //   height: "100%",
         //   width: "100%",
