@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Flashcard from "../Flashcard/Flashcard";
 import "./FlashcardArray.scss";
 
@@ -152,7 +152,7 @@ export default function FlashcardArray({
       setIsOverFlow("hidden");
       setTimeout(() => {
         setIsOverFlow("");
-      }, 100);
+      }, 90);
     }
 
     setCardsInDisplay(
@@ -170,7 +170,7 @@ export default function FlashcardArray({
       setIsOverFlow("hidden");
       setTimeout(() => {
         setIsOverFlow("");
-      }, 100);
+      }, 90);
     }
 
     setCardsInDisplay(
@@ -180,13 +180,12 @@ export default function FlashcardArray({
     );
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (forwardRef) {
       forwardRef.current.nextCard = nextCard;
       forwardRef.current.prevCard = prevCard;
     }
   });
-  console.log(cardsList);
 
   return (
     <div className="FlashcardArrayWrapper" style={FlashcardArrayStyle}>
